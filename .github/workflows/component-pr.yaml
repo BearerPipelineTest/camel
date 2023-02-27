@@ -49,7 +49,7 @@ jobs:
               body: `:warning: This PR changes Camel components and will be tested automatically.`
             })
       - name: 'Download artifact'
-        uses: actions/github-script@v3.1.0
+        uses: actions/github-script@v6
         if: |
           github.event_name == 'workflow_run'
         with:
